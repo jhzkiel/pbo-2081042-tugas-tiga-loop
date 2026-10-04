@@ -69,8 +69,30 @@ public class TigaLoop {
 
     /*
      * ---------- HASIL PERCOBAAN (ketentuan 2) ----------
-     * TODO: jalankan dengan n = 5, lalu salin keluarannya ke sini.
-     * TODO: jalankan dengan n = 0, lalu salin keluarannya ke sini.
+     * TODO: jalankan dengan n = 5, Batas deret (n) : 5
+
+===== SATU DERET, TIGA LOOP =====
+for      : 1 2 3 4 5
+while    : 1 2 3 4 5
+do-while : 1 2 3 4 5
+
+i <  n berputar : 4 kali
+i <= n berputar : 5 kali
+Disaring : 1 3 5 7
+Sampai println  : 4 kali
+
+     * TODO: jalankan dengan n = 0, Batas deret (n) : 0
+
+===== SATU DERET, TIGA LOOP =====
+for      :
+while    :
+do-while : 1
+
+i <  n berputar : 0 kali
+i <= n berputar : 0 kali
+Disaring : 1 3 5 7
+Sampai println  : 4 kali
+
      * TODO: tutup dengan kesimpulan satu kalimat tentang do-while.
      *
      * ---------- PENJELASAN (ketentuan 5) ----------
