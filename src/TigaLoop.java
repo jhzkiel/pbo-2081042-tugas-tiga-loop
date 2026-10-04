@@ -50,7 +50,7 @@ public class TigaLoop {
 
         // ---------- BAGIAN 3: saring deret 1..10 dengan continue dan break ----------
         System.out.print("Disaring :");
-        int dicetak = 0; // menghitung berapa kali println/print benar-benar tercapai
+        int dicetak = 0; // menghitung berapa kali print benar-benar tercapai
         for (int i = 1; i <= 10; i++) {
             if (i % 2 == 0) {
                 continue; // lewati angka genap
@@ -69,33 +69,43 @@ public class TigaLoop {
 
     /*
      * ---------- HASIL PERCOBAAN (ketentuan 2) ----------
-     * TODO: jalankan dengan n = 5, Batas deret (n) : 5
-
-===== SATU DERET, TIGA LOOP =====
-for      : 1 2 3 4 5
-while    : 1 2 3 4 5
-do-while : 1 2 3 4 5
-
-i <  n berputar : 4 kali
-i <= n berputar : 5 kali
-Disaring : 1 3 5 7
-Sampai println  : 4 kali
-
-     * TODO: jalankan dengan n = 0, Batas deret (n) : 0
-
-===== SATU DERET, TIGA LOOP =====
-for      :
-while    :
-do-while : 1
-
-i <  n berputar : 0 kali
-i <= n berputar : 0 kali
-Disaring : 1 3 5 7
-Sampai println  : 4 kali
-
-     * TODO: tutup dengan kesimpulan satu kalimat tentang do-while.
+     * Percobaan 1, n = 5:
+     *
+     * Batas deret (n) : 5
+     *
+     * ===== SATU DERET, TIGA LOOP =====
+     * for      : 1 2 3 4 5
+     * while    : 1 2 3 4 5
+     * do-while : 1 2 3 4 5
+     *
+     * i <  n berputar : 4 kali
+     * i <= n berputar : 5 kali
+     * Disaring : 1 3 5 7
+     * Sampai println  : 4 kali
+     *
+     * Percobaan 2, n = 0:
+     *
+     * Batas deret (n) : 0
+     *
+     * ===== SATU DERET, TIGA LOOP =====
+     * for      :
+     * while    :
+     * do-while : 1
+     *
+     * i <  n berputar : 0 kali
+     * i <= n berputar : 0 kali
+     * Disaring : 1 3 5 7
+     * Sampai println  : 4 kali
+     *
+     * Kesimpulan: do-while mengecek kondisinya sesudah badan loop dijalankan,
+     * jadi badannya pasti jalan minimal sekali (makanya saat n = 0 hanya
+     * do-while yang masih mencetak 1).
      *
      * ---------- PENJELASAN (ketentuan 5) ----------
-     * TODO: jelaskan kenapa loop tidak berhenti di i = 8 padahal 8 > 7.
+     * Loop tidak berhenti di i = 8 karena 8 genap, jadi continue jalan duluan
+     * dan langsung lompat ke putaran berikutnya sebelum sempat sampai ke
+     * pengecekan break. Break baru tercapai saat i = 9 (ganjil dan > 7).
+     * Karena continue ada di atas break, angka genap tidak pernah
+     * menyentuh kondisi break.
      */
 }
